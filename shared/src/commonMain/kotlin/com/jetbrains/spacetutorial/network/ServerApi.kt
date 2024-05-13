@@ -29,7 +29,7 @@ class ServerApi {
 
         defaultRequest {
             header(HttpHeaders.ContentType, ContentType.Application.Json)
-            header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTcxNTU2MDU5OH0.0vH2TIQTGPKUvfYOtqMVQ2akUrVzecQTyEfOwzj9PTk")
+            header("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVm9sbC5tZWQiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTcxNTU2NjIwMn0.n8jUdmwFm8DbtBimBDJZ2igclU-VYqE2HuV3IQch0V4")
         }
     }
 

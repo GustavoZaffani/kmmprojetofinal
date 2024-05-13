@@ -11,6 +11,7 @@ object TranslationConstants {
     const val EDITAR = "Editar"
     const val NOVO = "Novo"
     const val CARREGANDO = "Carregando..."
+    const val CAMPO_OBRIGATORIO = "Campo obrigatório"
 
     const val NOME = "Nome"
     const val EMAIL = "Email"

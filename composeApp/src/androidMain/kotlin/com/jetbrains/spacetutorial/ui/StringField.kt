@@ -10,6 +10,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import com.jetbrains.spacetutorial.constants.Constants.EMPTY
+import com.jetbrains.spacetutorial.constants.TranslationConstants
 
 @Composable
 fun StringField(
@@ -21,9 +23,9 @@ fun StringField(
 ): String {
 
     var fieldError by remember {
-        if (isRequired && fieldValue.isEmpty()) mutableStateOf("Campo obrigatório") else mutableStateOf(
-            ""
-        )
+        if (isRequired && fieldValue.isEmpty())
+            mutableStateOf(TranslationConstants.CAMPO_OBRIGATORIO)
+        else mutableStateOf(EMPTY)
     }
 
     TextField(
@@ -33,7 +35,7 @@ fun StringField(
             onValueChange(it)
 
             if (isRequired) {
-                fieldError = if (it.isEmpty()) "Campo obrigatório" else ""
+                fieldError = if (it.isEmpty()) TranslationConstants.CAMPO_OBRIGATORIO else EMPTY
             }
         },
         label = { Text(text = fieldLabel) },
